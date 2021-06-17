@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <style>
+            html, body {
+                margin: 0;
+                height: 100vh;
+                position: relative;
+                /* font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif; */
+                font-family: Roboto,arial,sans-serif;
+                font-size: 14px;
+            }
+
+            button {
+                margin: 20px 5px;
+                padding: 10px 15px;
+                border-style: none;
+                border-radius: 5px;
+                background-color: #f8f9fa;
+                font: 14px Roboto,arial,sans-serif;
+                color: #3c4043;
+            }
+
+            button:hover {
+                box-shadow: 0 0 0.25em lightgray;
+                cursor: pointer;
+            }
+
+            input {
+                font-family: Roboto,arial,sans-serif;
+                font-size: 16px;
+            }
+
+            li:hover {
+                text-decoration: underline;
+                cursor: pointer;
+            }
+
+            #container {
+                height: 100%;
+            }
+
+            #apps {
+                position: relative;
+                /* right: 10px; */
+                top: 8px;
+                /* padding: 6px; */
+            }
+
+            #mic {
+                height: 22px;
+                position: relative;
+                top: 5px;
+                right: 40px;
+                z-index: 1;
+            }
+
+            #footer {
+                position: fixed;
+                background-color: #f2f2f2;
+                width: 100%;
+                height: 49px;
+                bottom: 0;
+                z-index: 2;
+            }
+
+            #footer ul {
+                margin: 0 auto;
+            }
+
+            #footer li {
+                padding: 15px;
+                color: #70757a;
+            }
+
+            #nav-bar {
+                height: 48px;
+                /* margin: 6px 0 0 14px; */
+                padding: 6px;
+            }
+
+            ul {
+                display: inline;
+                margin: 0 auto;
+            }
+
+            li {
+                display: inline-block;
+                padding: 10px;
+                font-size: 14px;
+                color: #222;
+           }
+
+           #bunny {
+               border-radius: 100%; 
+               height: 32px;
+               position: relative;
+               top: 10px;
+           }
+
+            #right-footer {
+                float: right;
+                padding: 0 15px;
+            }
+
+            #right-links {
+                position: absolute;
+                right: 20px;
+                top: -5px;
+            }
+
+            #right-links li {
+                color: #222;
+                font: 13px Arial, sans-serif;
+                font-weight: normal;
+            }
+
+            #search-div {
+                position: relative;
+                height: 100%;
+                width: 100%;
+            }
+
+            #search {
+                position: relative;
+                margin: 0px;
+                padding: 0 0 0 40px;
+                width: 540px;
+                height: 44px;
+                border-radius: 22px;
+                border: 1px solid rgb(0, 0, 0, 0.1);
+                outline: none;
+            }
+
+            #search-image {
+                position: relative;
+                top: 5px;
+                left: 40px;
+                z-index: 1;
+            }
+
+            #search:hover {
+                box-shadow: 0 0 0.25em lightgray;
+            }
+
+            #logo {
+                margin: 10px;
+                /* margin-bottom: 15px; */
+            }
+
+            #main {
+                position: relative;
+                bottom: -100px;
+                clear: both;
+                text-align: center;
+                margin: 0 auto 200px auto;
+            }
+
+            .material-icons {
+                font-family: 'Material Icons';
+                font-weight: normal;
+                font-style: normal;
+                font-size: 24px;  /* Preferred icon size */
+                display: inline-block;
+                line-height: 1;
+                text-transform: none;
+                letter-spacing: normal;
+                word-wrap: normal;
+                white-space: nowrap;
+                direction: ltr;
+
+                /* Support for all WebKit browsers. */
+                -webkit-font-smoothing: antialiased;
+                /* Support for Safari and Chrome. */
+                text-rendering: optimizeLegibility;
+
+                /* Support for Firefox. */
+                -moz-osx-font-smoothing: grayscale;
+
+                /* Support for IE. */
+                font-feature-settings: 'liga';
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div id="nav-bar">
+                <ul id="left-links">
+                    <li>About</li>
+                    <li>Store</li>
+                </ul>
+                <ul id="right-links">
+                    <li>Gmail</li>
+                    <li>Images</li>
+                    <li><span id="apps" class="material-icons">apps</span></li>
+                    <li><img id="bunny" src="bunny.jpg"></li>
+                </ul>
+            </div>
+            <div id="main">
+                <img id="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" width="272px">
+                <form>
+                    <div id="search-div">
+                        <img id="search-image" src="google-search.png" size="15px">
+                        <input id="search" type="text" autofocus>
+                        <img id="mic" src="Google_mic.svg">
+                    </div>
+                </form>
+                <button>Google Search</button>
+                <button>I'm Feeling Lucky</button>
+            </div>
+
+            <div id="footer">
+                <ul>
+                    <li>Advertising</li>
+                    <li>Business</li>
+                    <li>How Search works</li>
+                </ul>
+                <ul id="right-footer">
+                    <li>Privacy</li>
+                    <li>Terms</li>
+                    <li>Settings</li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>
